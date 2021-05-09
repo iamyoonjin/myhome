@@ -5,12 +5,13 @@
     <title>welcome</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,700;1,200&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      .kim {
+      h1 {
         font-family: Nunito Sans;
+        width: 100%;
+        text-align: center;
         font-size: 88px;
-        margin-left: 400px;
-        padding-bottom: 100px;
         position: fixed;
       }
       a{
@@ -21,11 +22,11 @@
         font-family: Nunito Sans;
         font-style: italic;
         font-size: 12px;
-        text-align: left;
+        text-align:left;
         margin: auto;
         text-decoration: overline 0.5px;
       }
-      #box{
+      #side{
         margin-left: 1000px;
         margin-top: 190px;
         position: fixed;
@@ -66,13 +67,75 @@
         margin-top: 80px;
         margin-bottom: 50px;
       }
+      @media ( max-width: 767px ) {
+        h1 {
+          font-family: Nunito Sans;
+          width: 100%;
+          text-align: center;
+          font-size: 88px;
+          position: fixed;
+        }
+        a{
+          color: black;
+          text-decoration: none;
+        }
+        p {
+          font-family: Nunito Sans;
+          font-style: italic;
+          font-size: 12px;
+          text-align:left;
+          margin: auto;
+          text-decoration: overline 0.5px;
+        }
+        #side{
+          margin-left: 0px;
+          margin-top: 190px;
+          position: fixed;
+        }
+        .size{
+          width: 80%;
+          margin-left: 45px;
+          margin-top: 300px;
+          margin-bottom: 50px;
+        }
+        .jb{
+          transition: all ease 1s;
+        }
+        .jb:hover {
+          transform: rotate( -45deg );
+        }
+        .b{
+          width: 80%;
+          margin-left: 30px;
+          margin-top: 30px;
+          margin-bottom: 50px;
+        }
+        .a{
+          width: 80%;
+          margin-left: 30px;
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+        .c{
+          width: 80%;
+          margin-left: 30px;
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+        .d{
+          width: 80%;
+          margin-left: 30px;
+          margin-top: 80px;
+          margin-bottom: 50px;
+        }
+      }
     </style>
   </head>
   <body>
-      <h1 class="kim"><a href="">KIM YOON JIN.</a></h1>
-      <div id="box">
+      <h1><a href="">KIM YOON JIN.</a></h1>
+      <div id="side">
         <p>visual communication design</p>
-        <p>E-mail:iamyoonjin@gmail.com</p>
+        <p>e-mail:iamyoonjin@gmail.com</p>
       </div>
       <div class="jb">
         <img class="size" src="main_title.png">
@@ -86,7 +149,5 @@
       <img class="d" src="gyu.gif">
       <img class="b" src="muster.jpg">
       <img class="a" src="potsdam.jpg">
-
-
   </body>
 </html>
