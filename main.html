@@ -7,147 +7,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,700;1,200&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      h1 {
-        font-family: Nunito Sans;
+      body{
+            font-family: Nunito Sans;
+            margin: 0;
+            /*background: beige;
+            height: 100%;*/
+      }
+      h1{
         width: 100%;
         text-align: center;
-        font-size: 88px;
+        font-size: 5rem;
         position: fixed;
       }
       a{
         color: black;
         text-decoration: none;
       }
-      p {
-        font-family: Nunito Sans;
+
+      .container{
+        display: flex;
+        /*flex-direction: column;
+        flex-wrap:nowrap;*/
+        flex-flow: column nowrap;
+        margin-left: 7rem;
+        margin-top: 12rem;
+        position: fixed;
+      }
+      p{
         font-style: italic;
-        font-size: 12px;
-        text-align:left;
+        font-size: 0.65rem;
+        text-align: left;
         margin: auto;
         text-decoration: overline 0.5px;
       }
-      #side{
-        margin-left: 1000px;
-        margin-top: 190px;
-        position: fixed;
+      .container2{
+        padding-top: 18.75rem;
+        flex-flow: column wrap;
+        align-items: center;
+        display: flex;
+        /*justify-content: space-evenly;*/
       }
-      .size{
-        width: 600px;
-        margin-left: 400px;
-        margin-top: 300px;
-        margin-bottom: 50px;
+      .item1{
+        transition: all ease 1s
       }
-      .jb{
-        transition: all ease 1s;
-      }
-      .jb:hover {
+      .item1:hover {
 				transform: rotate( -45deg );
 			}
-      .b{
-        width: 700px;
-        margin-left: 350px;
-        margin-top: 30px;
+      img{
+        width: 600px;
+        height:auto;
         margin-bottom: 50px;
       }
-      .a{
-        width: 550px;
-        margin-left: 455px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+      .item8{
+        width: 400px;
+        height:auto;
+        margin-bottom: 50px
       }
-      .c{
-        width: 700px;
-        margin-left: 300px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
-      .d{
-        width: 500px;
-        margin-left: 350px;
-        margin-top: 80px;
-        margin-bottom: 50px;
-      }
-      @media ( max-width: 1162px ) {
-        h1 {
-          font-family: Nunito Sans;
+      @media (max-width: 768px) {
+        h1{
           width: 100%;
-          text-align: center;
-          font-size: 40px;
-          position: fixed;
-        }
-        a{
-          color: black;
-          text-decoration: none;
-        }
-        p {
-          font-family: Nunito Sans;
+          text-align: left;
           font-style: italic;
-          font-size: 12px;
-          text-align:left;
-          margin: auto;
-          text-decoration: underline 0.5px;
-        }
-        #side{
-          margin-left: 0px;
-          margin-top: 190px;
+          font-size: 3.5em;
           position: fixed;
         }
-        .size{
-          width: 80%;
-          margin-left: 45px;
-          margin-top: 300px;
-          margin-bottom: 50px;
+        .container{
+          margin-left: 0;
+          margin-top: 0;
         }
-        .jb{
-          transition: all ease 1s;
+        .container2{
+          padding-top: 8rem;
         }
-        .jb:hover {
-          transform: rotate( -45deg );
-        }
-        .b{
-          width: 80%;
-          margin-left: 30px;
-          margin-top: 30px;
-          margin-bottom: 50px;
-        }
-        .a{
-          width: 80%;
-          margin-left: 30px;
-          margin-top: 50px;
-          margin-bottom: 50px;
-        }
-        .c{
-          width: 80%;
-          margin-left: 30px;
-          margin-top: 50px;
-          margin-bottom: 50px;
-        }
-        .d{
-          width: 80%;
-          margin-left: 30px;
-          margin-top: 80px;
-          margin-bottom: 50px;
+        img{
+          width: 18.75rem;
+          height:auto;
         }
       }
     </style>
   </head>
   <body>
+    <div>
       <h1><a href="">KIM YOON JIN.</a></h1>
-      <div id="side">
-        <p>visual communication design</p>
-        <p>e-mail:iamyoonjin@gmail.com</p>
-      </div>
-      <div class="jb">
-        <img class="size" src="main_title.png">
-      </div>
-      <img class="b" src="big.png">
-      <img class="b" src="big2.png">
-      <img class="c" src="swing.gif">
-      <img class="a" src="smalla.png">
-      <img class="b" src="ba1.png">
-      <img class="b" src="ba2.png">
-      <img class="d" src="gyu.gif">
-      <img class="b" src="muster.jpg">
-      <img class="a" src="potsdam.jpg">
+    </div>
+    <div class="container">
+      <p>visual communication design</p>
+      <p>e-mail:iamyoonjin@gmail.com</p>
+    </div>
+    <div class="container2">
+        <div class="item1"><img src="main_title.png"></div>
+        <div class="item2"><img src="big.png"></div>
+        <div class="item3"><img src="big2.png"></div>
+        <div class="item4"><img src="swing.gif"></div>
+        <div class="item5"><img src="smalla.png"></div>
+        <div class="item6"><img src="ba1.png"></div>
+        <div class="item7"><img src="ba2.png"></div>
+        <div class="item8"><img src="gyu.gif"></div>
+        <div class="item9"><img src="muster.jpg"></div>
+        <div class="item10"><img src="potsdam.jpg"></div>
+    </div>
   </body>
 </html>
