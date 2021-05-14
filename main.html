@@ -61,24 +61,20 @@
       }
       .item{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         list-style: none;
-        align-items: center;
+        margin-top: 250px;
         padding-left: 0;
-        margin: 200px;
       }
+      .item li{
+        width: 100px;
+        padding: 30px;
+     }
       img{
-        max-width: 700px;
+        width: inherit;
+        max-width: 100%;
         height: auto;
-      }
-      #swing{
-        margin-top: 90px;
-      }
-      #ba2{
-        margin-top: 100px;
-      }
-      #gyu{
-        margin-top: 100px;
       }
       @media screen and (max-width: 768px){
         .kim{
@@ -94,9 +90,9 @@
           display: block;
         }
         .item{
-          align-items: flex-start;
-          margin-left: 30px;
-          margin-top: 180px;
+          display: flex;
+          flex-flow: row wrap;
+          margin-top: 150px;
         }
         img{
           width: inherit;
@@ -119,14 +115,15 @@
         <p>#visual communication design_e-mail:iamyoonjin@gmail.com</p>
       </div>
       <ul class="item">
-        <li><img src="main_title.png"></li>
-        <li><img src="big.png"></li>
-        <li><img src="big2.png"></li>
-        <li><img id="swing" src="swing.gif"></li>
+        <li><img src="fotoAB.png"></li>
         <li><img src="smalla.png"></li>
+        <li><img src="gross.gif"></li>
+        <li><img src="swing.gif"></li>
         <li><img src="ba1.png"></li>
-        <li><img id="ba2" src="ba2.png"></li>
-        <li><img id ="gyu" src="gyu.gif"></li>
+        <li><img src="ba2.png"></li>
+        <li><img src="gyu.gif"></li>
+        <li><img src="muster.png"></li>
+        <li><img src="Potsdam_poster.jpg"></li>
       </ul>
     </div>
   </body>
