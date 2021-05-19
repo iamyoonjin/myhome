@@ -4,130 +4,97 @@
     <meta charset="utf-8">
     <title>welcome</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,700;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       body{
-            font-family: Nunito Sans;
+            font-family: "Roboto", sans-serif;
             margin: 0;
-            background: beige;
             height: 100%;
+            background-color: #eeeeee;
           }
+       .main{
+         display: flex;
+         height: 100vh;
+         flex-wrap: wrap;
+         flex-direction: row-reverse;
+         align-items: center;
+       }
+       .info{
+         width: 100%;
+         position: fixed;
+         align-self: flex-start;
+       }
+       .info div{
+         font-weight: 300;
+         margin: auto;
+         color: #707070;
+       }
+      .vertical_name{
+        width: 10px;
+        word-wrap: break-word;
+        padding: 10px;
+        border: 1px solid #707070;
+        position: fixed;
+      }
       a{
         text-decoration: none;
-        color: #424242;
-      }
-      .total{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .name{
-        width: 100%;
-        text-align: center;
-        position: fixed;
-      }
-      .kim{
-        font-size: 100px;
-        margin-bottom: 0px;
-        margin-top: 30px;
-      }
-      .side{
-        display: flex;
-        padding-left: 0;
-        padding-right: 350px;
-        list-style: none;
-        flex-direction: column;
-        font-size: 14px;
-        text-decoration: underline;
-        align-items: flex-end;
-        width: 100%;
-        font-style: italic;
-        position: fixed;
-        margin-top: 150px;
-      }
-      .side2{
-        display: none;
-        position: fixed;
-        width: 100%;
-        text-align: left;
-      }
-      .side2 p{
-        font-size: 14px;
-        font-style: italic;
-        margin: 0px;
+        color: #707070;
+        font-weight: 700;
+        font-size: 20px;
       }
       .item{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
         list-style: none;
-        align-items: center;
-        margin-top: 250px;
-
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15.625em;
       }
       .item li{
-        width: 100px;
-        padding: 30px;
+        width: 40rem;
+        padding: 1.875em;
      }
       img{
         width: inherit;
         max-width: 100%;
         height: auto;
       }
-      @media screen and (max-width: 768px){
-        .kim{
-          font-size: 100px;
-          line-height: 80%;
-          margin: 0;
-          text-align: left;
-          padding-top: 50px;
-          padding-left: 30px;
-        }
-        .side{
-          display: none;
-        }
-        .side2{
-          display: block;
-          text-decoration: solid 1px underline;
-        }
+      @media screen and (max-width: 48rem){
         .item{
           display: flex;
-          flex-flow: row wrap;
-          margin-top: 330px;
+          flex-flow: column wrap;
+          list-style: none;
+          margin-top: 15.625em;
+          padding-left: 0;
+          margin-left: 0;
         }
+        .item li{
+          width: 21rem;
+       }
         img{
           width: inherit;
           max-width: 100%;
           height: auto;
         }
       }
-    </style>
+   </style>
   </head>
   <body>
-    <div class="total">
-      <div class="name">
-        <h1 class="kim"><a href="">KIM YOON JIN.</a></h1>
-      </div>
-      <ul class="side">
-        <li>#visual communication design</li>
-        <li>e-mail:iamyoonjin@gmail.com</li>
-      </ul>
-      <div class="side2">
-        <p>#visual communication design_E-mail:iamyoonjin@gmail.com</p>
-      </div>
+    <div class="main">
+      <div class="info">
+        <div>#visual communication design</div>
+        <div>E-mail:iamyoonjin@gmail.com</div>
+        </div>
+      <div class="vertical_name">
+         <a href="">KIM YOON JIN.</a>
+        </div>
       <ul class="item">
         <li><img src="fotoAB.png"></li>
         <li><img src="smalla.png"></li>
-        <li><img src="gross.gif"></li>
-        <li><img src="swing.gif"></li>
         <li><img src="ba1.png"></li>
         <li><img src="ba2.png"></li>
         <li><img src="gyu.gif"></li>
-        <li><img src="muster.png"></li>
-        <li><img src="Potsdam_poster.jpg"></li>
       </ul>
     </div>
   </body>
