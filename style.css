@@ -54,12 +54,14 @@ img{
   height: auto;
 }
 h1{
-  align-self: flex-end;
-  color: #424242;
+  position:fixed;
+  align-self: flex-start;
+  margin: 0;
+  padding-right: 10px;
+  color: #696969;
   font-weight: 700;
   font-size: 18px;
   margin-right: 10px;
-  position: fixed;
 }
 @media screen and (max-width: 48rem){
   .item{
@@ -80,8 +82,9 @@ h1{
   }
   h1{
       font-size: 12px;
-      margin-right: 20px;
-      margin-bottom: 30px;
+      font-weight: 300;
+      margin: 0;
+      padding-right: 10px;
       position: fixed;
     }
   }
